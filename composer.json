@@ -1,0 +1,17 @@
+{
+  "name": "gsdata/convert-office",
+  "description": "the package of gsdata",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "carl.guo",
+      "email": "guo14903@live.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6",
+    "phpoffice/phpword": "~0.16"
+  }
+}
