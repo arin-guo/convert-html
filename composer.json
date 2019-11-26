@@ -15,5 +15,10 @@
   "require": {
     "php": ">=5.6",
     "phpoffice/phpword": "~0.16"
+  },
+  "autoload": {
+    "psr-4": {
+      "Guo14903\\ConvertOffice\\": "src/"
+    }
   }
 }

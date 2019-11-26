@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Gsdata\ConvertOffice;
+namespace Guo14903\ConvertOffice;
 
 
 use PhpOffice\PhpWord\Exception\Exception;
