@@ -18,11 +18,11 @@ class HtmlConvert
         $this->phpWord = new PhpWord();
     }
 
-    public function toWord($htmlContent,$path)
+    public function toWord($htmlContent, $path, $fullHTML = false)
     {
         try {
             $section = $this->phpWord->addSection();
-            Html::addHtml($section, $htmlContent, true);
+            Html::addHtml($section, $htmlContent, $fullHTML);
             $objWriter = IOFactory::createWriter($this->phpWord, 'Word2007');
             $objWriter->save($path);
             return $path;
