@@ -29,4 +29,25 @@ class HtmlConvert
             return $msg;
         }
     }
+
+    public function toPdf($htmlContent, $path)
+    {
+        try {
+            //将获取到的html代码存储为临时文件
+            $temp = tmpfile();
+            fwrite($temp, $htmlContent);
+
+            $wkhtmltopdfPath = \h4cc\WKHTMLToPDF\WKHTMLToPDF::PATH;
+
+            $cmd = "{$wkhtmltopdfPath} {$temp} {$path}";
+
+            exec($cmd);
+
+            fclose($temp);
+        } catch (\Exception $exception) {
+            $msg = $exception->getMessage();
+            $msg = json_encode($msg);
+            return $msg;
+        }
+    }
 }
