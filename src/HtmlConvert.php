@@ -11,20 +11,18 @@ use PhpOffice\PhpWord\Shared\Html;
 
 class HtmlConvert
 {
-    private $htmlContent = '';
     private $phpWord = '';
 
-    public function __construct($htmlContent)
+    public function __construct()
     {
-        $this->htmlContent = $htmlContent;
         $this->phpWord = new PhpWord();
     }
 
-    public function toWord($path)
+    public function toWord($htmlContent,$path)
     {
         try {
             $section = $this->phpWord->addSection();
-            Html::addHtml($section, $this->htmlContent, true);
+            Html::addHtml($section, $htmlContent, true);
             $objWriter = IOFactory::createWriter($this->phpWord, 'Word2007');
             $objWriter->save($path);
             return $path;
