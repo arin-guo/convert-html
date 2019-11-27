@@ -12,6 +12,5 @@
    
 `$html`内容是html内容  
 `$path`是转换的文件保存位置
-
-
-
+  
+**转换pdf需要赋予`APP_PATH/vender/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64`执行权限**
