@@ -1,8 +1,8 @@
 # convert-html
 #### 安装, 暂时是dev版, composer安装时需要在最后加上:dev-master
-`composer require guo14903/convert-html:dev-master`
+`composer require carl-gq/convert-html:dev-master`
 #### 使用
-`$model = new \Guo14903\ConvertOffice\HtmlConvert();` 
+`$model = new \CarlGq\ConvertOffice\HtmlConvert();` 
   
   转换word(doc格式)  
 `$model->toWord($html, $path);` 
