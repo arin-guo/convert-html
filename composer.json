@@ -1,5 +1,5 @@
 {
-  "name": "guo14903/convert-html",
+  "name": "carl-gq/convert-html",
   "description": "the package of gsdata",
   "type": "library",
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Guo14903\\ConvertOffice\\": "src/"
+      "GuoGq\\ConvertOffice\\": "src/"
     }
   }
 }
